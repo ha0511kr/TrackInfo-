@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>337</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="10" column="0" colspan="2">
+     <widget class="Line" name="line_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="Itunes_Button">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="toolTip">
+       <string>Get iTunes Data</string>
+      </property>
+      <property name="text">
+       <string>Main.itunes.Button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" colspan="2">
+     <widget class="QLabel" name="Current_Artist">
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Get Current Artist</string>
+      </property>
+      <property name="text">
+       <string>Main.Current.Artist</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QLabel" name="Current_Name">
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Get Current Song Name</string>
+      </property>
+      <property name="text">
+       <string>Main.Current.Name</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0" colspan="2">
+     <widget class="QLabel" name="Current_Album">
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Get Current Album</string>
+      </property>
+      <property name="text">
+       <string>Main.Current.Album</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0" colspan="2">
+     <widget class="QLabel" name="Current_ID">
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Get Current ID of the Song (Spotify Only)</string>
+      </property>
+      <property name="text">
+       <string>Main.Current.ID</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0" colspan="2">
+     <widget class="Line" name="line_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="Spotify_Button">
+      <property name="toolTip">
+       <string>Get Spotify Data</string>
+      </property>
+      <property name="text">
+       <string>Main.Spotify.Button</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0" colspan="2">
+     <widget class="Line" name="line_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0" colspan="2">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Coming Soon... Still in progress</string>
+      </property>
+      <property name="text">
+       <string>Current Artwork: Coming Soon</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QCheckBox" name="Prefix_CheckBox">
+      <property name="toolTip">
+       <string>Enables this to output to a prefixed text file (Custom.txt)</string>
+      </property>
+      <property name="text">
+       <string>Prefix (Custom.txt Output)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="EditPrefix_Button">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="toolTip">
+       <string>Click to edit prefix for &quot;Custom.txt&quot; File</string>
+      </property>
+      <property name="text">
+       <string>Edit Prefix</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="Line" name="line_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionDonation"/>
+   </widget>
+   <addaction name="menuAbout"/>
+  </widget>
+  <action name="actionAbout">
+   <property name="text">
+    <string>This Program</string>
+   </property>
+   <property name="toolTip">
+    <string>About the Developer</string>
+   </property>
+  </action>
+  <action name="actionDonation">
+   <property name="text">
+    <string>Donation</string>
+   </property>
+   <property name="toolTip">
+    <string>Donation/Support</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
